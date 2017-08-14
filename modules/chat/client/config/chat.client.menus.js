@@ -1,4 +1,4 @@
-(function () {
+/*(function () {
   'use strict';
 
   angular
@@ -8,10 +8,10 @@
   menuConfig.$inject = ['menuService'];
 
   function menuConfig(menuService) {
-    // Set top bar menu items
+    // We will eventually turn this into a post instead of a chat.
     menuService.addMenuItem('topbar', {
       title: 'Chat',
       state: 'chat'
     });
   }
-}());
+}());*/
