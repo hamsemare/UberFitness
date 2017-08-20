@@ -21,6 +21,15 @@
           roles: ['user', 'admin']
         }
       })
+      .state('main', {
+        url: '/main',
+        templateUrl: '/modules/core/client/views/mainpage.html',
+        controller: 'PageController',
+        controllerAs: 'vm',
+        data: {
+           pageTitle: 'Main'
+        }
+      })    
       .state('settings.profile', {
         url: '/profile',
         templateUrl: '/modules/users/client/views/settings/edit-profile.client.view.html',
