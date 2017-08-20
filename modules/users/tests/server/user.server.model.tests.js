@@ -137,7 +137,7 @@ describe('User Model Unit Tests:', function() {
             });
         });
 
-        it('should confirm that saving user model doesnt change the password', function(done) {
+        it('should confirm that saving user model doesnt  the password', function(done) {
             var _user1 = new User(user1);
 
             _user1.save(function(err) {
@@ -290,12 +290,12 @@ describe('User Model Unit Tests:', function() {
             });
         });
 
-        it('should not allow a password less than 6 characters long - "P@$$ws"', function(done) {
+        it('should not allow a password less than 5 characters long - "P@$$w"', function(done) {
             var _user1 = new User(user1);
             _user1.password = 'P@$$';
 
             _user1.validate(function(err) {
-                err.errors.password.message.should.equal('The password must be at least 6 characters long.');
+                err.errors.password.message.should.equal('The password must be at least 5 characters long.');
                 done();
             });
         });
