@@ -49,7 +49,8 @@
       }
 
       UsersService.userSignin(vm.credentials)
-        .then(onUserSigninSuccess)
+          .then(onUserSigninSuccess)
+          
         .catch(onUserSigninError);
     }
 
