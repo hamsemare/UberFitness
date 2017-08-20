@@ -1,49 +1,183 @@
 <!DOCTYPE html>
 <html>
 <section data-ng-controller="HomeController">
+    <table>
+        <tr>
+            <td id="left">
+                <h1> UBER</h1>
+                <h1> FITNESS</h1>
+            </td>
 
-  <table style="width:100%">
-  <tr>
-    <div style="float:left">
-		<img src="./modules/core/client/img/brand/UberFitness.png" alt="" width="720" height="660">
-  </div>  
-  </tr>
-    <div style="float:right">
+            <td>
+                <h1 class="Slogan">Log your workouts with UberFitness </h1>
+                <h3 id="catch"> The fastest, easiest to use workout logger</h3>
+                <a class="login" ui-sref="authentication.signin">Log In</a>
+            </td>
+        </tr>
+    </table>
 
-    <div class="row-fluid">
-    <div class="col-md-6 col-md-offset-5">
-      <p>
-      <button type="button" class="btn btn-primary btn-lg" id="login" >Sign in</button>
-      <button type="button" class="btn btn-default btn-lg" id = "register">Register</button>
-      </p>	
+    <br/>
+    <h2 class="try">Give UberFitness a try today</h2>
+    <br/>
+    <br/>
+
+
+    <div>
+        <h4> WHAT'S UberFitness? </h4>
+        <br/>
+        <p>UberFitness is designed to replace your paper workout journal. UberFitness was developed by two brothers who were disappointed with the selection of overly complicated workout tracking apps, so our solution was a simple, yet visually pleasing,
+            and user-friendly workout logger that is quick and fast to use.
+        </p>
+        <br/>
+        <br/>
+
+        <h4> WHY UberFitness? </h4>
+        <br/>
+        <p>Other workout apps ????. Here at UberFitness we beieve that a workout tracker should do what just what it says: TRACK! By being simple, we allow users to log quickly and easily, avoiding logging to get in the way of your workout.</p>
+        <br/>
+        <br/>
     </div>
+
+
+
+    <div class="well">
+        <h2>Check out some of the following</h2>
+        <p>
+            <ul>
+                <li><a target="_blank " href="http://meanjs.org/docs.html ">Mean JS. Used to develop UberFitness</a>
+                </li>
+                <li><a target="_blank " href="https://github.com/ismailmare/UberFitness ">UberFitness Github</a>
+                </li>
+                <li><a target="_blank " href=" ">UberFitness Community</a>
+                </li>
+                <li><a target="_blank " href=" ">UberFitness Blog</a>
+                </li>
+            </ul>
+        </p>
     </div>
-  </div>
-  <tr>
-  </tr>
-</table>
 
 
-
-
-  </div>
-	<div class="well">
-		<h2>Check out some of the following</h2>
-		<p>
-			
-			<ul>
-				<li><a target="_blank" href="http://meanjs.org/docs.html">Mean JS. Used to develop UberFitness</a>
-				</li>
-				<li><a target="_blank" href="https://github.com/ismailmare/UberFitness">Uber Fitness Github</a>
-				</li>
-				<li><a target="_blank" href="">Uber Fitness Community</a>
-				</li>
-				<li><a target="_blank" href="">UberFitness Blog</a>
-				</li>
-			</ul>
-		</p>
-	</div>
-	<br>Kepp Calm and Stay Fit
-	<br>The Uber Fitness 
+    <div class="footer">
+        <div class="container">
+            <br>Keep Calm and Stay Fit
+            <br>The UberFitness
+            <br>&copy; Made by I & H WARE
+        </div>
+    </div>
 </section>
-</html>
+
+
+
+    <style>
+        section, html {
+            margin: 0;
+            padding: 0;
+            background: radial-gradient(circle, white);
+        }
+        
+        table {
+            width: 100%
+        }
+        
+        td {
+            height: 700px;
+            width: 1800px;
+            opacity: .8;
+            border-style: solid
+        }
+        
+        #left {
+            background-size: 400px 600px;
+            background-repeat: no-repeat;
+            background-color: black;
+            position: relative;
+        }
+        
+        #left>h1 {
+            color: #FFF;
+            font-family: 'Quicksand', sans-serif;
+            font-size: 90px;
+            font-weight: 400;
+            line-height: 400px;
+            margin: 0;
+            text-align: center;
+        }
+        
+        .login {
+            background-color: #333;
+            color: #fff;
+            font-weight: 800;
+            letter-spacing: 1.3px;
+            text-transform: uppercase;
+            font-family: 'Abel', sans-serif;
+            font-size: 34px;
+            padding: 0px 45px;
+            margin: 10px 35px 330px 220px;
+            6 text-align: center;
+            float: right;
+        }
+        
+        a:hover {
+            color: #fff;
+        }
+        
+        .Slogan {
+            color: ;
+            $ font-family: 'Abel', sans-serif;
+            font-size: 40px;
+            margin: 10px 25px 12px 20px;
+            text-align: center;
+            position: relative;
+        }
+        
+        #catch {
+            color: ;
+            font-family: 'Abel', sans-serif;
+            font-size: 25px;
+            margin: 25px 55px 10px 40px;
+            text-align: center;
+        }
+        
+        .try {
+            color: ;
+            font-family: 'Abel', sans-serif;
+            font-size: 45px;
+            text-align: center;
+            position: relative;
+            border-style: initial;
+        }
+        
+        h4 {
+            color: ;
+            $ font-family: 'Abel', sans-serif;
+            font-size: 40px;
+            
+            position: relative;
+            text-align: center;
+            
+            text-decoration: underline;
+        }
+        
+        p {
+            color: ;
+            $ font-family: 'Abel', sans-serif;
+            font-size: 24px;
+            margin: 0 auto;
+            position: relative;
+            text-align: center;
+            top: 15%;
+            width: 60%;
+        }
+        
+        .well {
+            background-color: #fff;
+        }
+        
+        .footer {
+            border-top: solid;
+            border-width: 10px;
+            color: tan
+        }
+    </style>
+
+</html
