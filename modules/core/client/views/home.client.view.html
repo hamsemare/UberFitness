@@ -17,7 +17,7 @@
     </table>
 
     <br/>
-    <h2 class="try">Give UberFitness a try today</h2>
+    <h3 ><a class="try" ui-sref="authentication.signup">Give UberFitness a try today</a></h3>
     <br/>
     <br/>
 
@@ -73,21 +73,20 @@
             margin: 0;
             padding: 0;
             background: radial-gradient(circle, white);
+            
         }
-        
+
         table {
             width: 100%
         }
         
         td {
-            height: 700px;
-            width: 1800px;
+            width: 38em;
             opacity: .8;
             border-style: solid
         }
         
         #left {
-            background-size: 400px 600px;
             background-repeat: no-repeat;
             background-color: black;
             position: relative;
@@ -96,9 +95,9 @@
         #left>h1 {
             color: #FFF;
             font-family: 'Quicksand', sans-serif;
-            font-size: 90px;
+            font-size: 9em;
             font-weight: 400;
-            line-height: 400px;
+            line-height: 3.5em;
             margin: 0;
             text-align: center;
         }
@@ -107,13 +106,13 @@
             background-color: #333;
             color: #fff;
             font-weight: 800;
-            letter-spacing: 1.3px;
+            letter-spacing: 0.15em;
             text-transform: uppercase;
             font-family: 'Abel', sans-serif;
-            font-size: 34px;
-            padding: 0px 45px;
-            margin: 10px 35px 330px 220px;
-            6 text-align: center;
+            font-size: 2em;
+            padding: 0em 1.5em;
+            margin: 1em 1em 15em 5em;
+            text-align: center;
             float: right;
         }
         
@@ -124,8 +123,8 @@
         .Slogan {
             color: ;
             $ font-family: 'Abel', sans-serif;
-            font-size: 40px;
-            margin: 10px 25px 12px 20px;
+            font-size: 4em;
+            margin: 1em 0.5em 0.5em 0.5em;
             text-align: center;
             position: relative;
         }
@@ -133,35 +132,39 @@
         #catch {
             color: ;
             font-family: 'Abel', sans-serif;
-            font-size: 25px;
-            margin: 25px 55px 10px 40px;
+            font-size: 1.9em;
+            margin: 0em 1em 0em 1em;
             text-align: center;
         }
-        
+
+        /*Need to make it able to fit in the window when shrunk*/
         .try {
-            color: ;
+            color: #333;
             font-family: 'Abel', sans-serif;
-            font-size: 45px;
+            font-size: 2.5em;
             text-align: center;
             position: relative;
-            border-style: initial;
+            border-style: solid;
+        }
+
+        .try:hover{
+            color: tan;
+            text-decoration: none;
         }
         
         h4 {
             color: ;
             $ font-family: 'Abel', sans-serif;
-            font-size: 40px;
-            
+            font-size: 3em;
             position: relative;
             text-align: center;
-            
             text-decoration: underline;
         }
         
         p {
             color: ;
             $ font-family: 'Abel', sans-serif;
-            font-size: 24px;
+            font-size: 2em;
             margin: 0 auto;
             position: relative;
             text-align: center;
@@ -175,7 +178,7 @@
         
         .footer {
             border-top: solid;
-            border-width: 10px;
+            border-width: 1em;
             color: tan
         }
     </style>
